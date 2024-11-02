@@ -1,0 +1,7 @@
+<h1>Online Courses Catalog</h1>
+
+<div class="list">
+     @for (i of courses; track i.id) {
+        <app-course-card [item]="i"></app-course-card>       
+     }
+</div>

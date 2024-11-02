@@ -1,0 +1,25 @@
+<mat-card class="card" appearance="outlined">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{item?.name}}</mat-card-title>
+        <mat-card-subtitle>{{item?.categoryName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{item?.imageUrl}} alt={{item?.name}}>
+    <mat-card-content>
+        <p>
+            {{item?.price}}$
+            @if(item?.discount){
+                (-{{item?.discount}}%)
+            }
+        </p>
+        <p>
+            Language: {{item?.language}}
+            <br>
+            Level: {{item?.levelName}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Add to Cart</button>
+        <button mat-button>Buy</button>
+    </mat-card-actions>
+</mat-card>

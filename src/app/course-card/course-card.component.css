@@ -1,0 +1,15 @@
+.card {
+    max-width: 800px;
+    transition: .2s;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    z-index: 100;
+    box-shadow: 0 0 40px rgb(148, 148, 148);
+}
